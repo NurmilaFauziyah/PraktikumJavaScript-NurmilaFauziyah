@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan</title>
+  <style>
+    #dataMahasiswa {
+      border: 1px solid;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  Nama <input id="cetakNama" type="text"> <br>
+  Jurusan <input id="cetakJurusan" type="text"> <br>
+  Nim <input id="cetakNIM" type="text"> <br>
+  <button onclick="cetakDataMahasiswa()">Cetak Mahasiswa</button>
+  <br>
+  <ul id="dataMahasiswa"></ul>
+
+  <script>
+    function cetakDataMahasiswa() {
+      const nilaicetakNama = document.getElementById("cetakNama").value;
+      const nilaicetakJurusan = document.getElementById("cetakJurusan").value;
+      const nilaicetakNIM = document.getElementById("cetakNIM").value;    
+      document.getElementById("dataMahasiswa").innerHTML += `<li>${nilaicetakNama} ${nilaicetakJurusan} ${nilaicetakNIM}</li>`;
+    }
+
+  </script>
+</body>
+</html>

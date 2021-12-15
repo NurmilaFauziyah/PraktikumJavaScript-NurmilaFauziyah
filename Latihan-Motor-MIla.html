@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor</title>
+</head>
+<body>
+    <h1 id="kendaraan">Kendaraan</h1>
+    <button id="tombol" onclick="onderdilKlakson()"></button> <!--Klakson-->
+    <p id="bunyi"></p> <!--.............-->
+
+    <button id="pencet" onclick="onderdilGas()"></button>
+    <p id="cepat">Kecepatan: 20 km</p>
+
+    <script> 
+    //    console.log("Hello World");
+    //    window.alert("Hello World");
+    //    document.write("Hello World");
+        document.getElementById("kendaraan").innerHTML = "Motor";
+    
+    // var nama = "Nurmila Fauziyah";
+    // console.log(nama)
+
+        document.getElementById("tombol").innerHTML = "Klakson";
+        document.getElementById("bunyi").innerHTML = "........";
+
+        function onderdilKlakson() {
+        const bunyi = document.getElementById("bunyi");
+            bunyi.innerHTML = "tin tin tin";
+            bunyi.style.backgroundColor = "pink";
+        // document.getElementById("bunyi").innerHTML = "tin tin tin";
+        // document.getElementById("bunyi").style.backgroundColor = "pink";
+        }
+
+    //    onderdilKlakson();
+
+        document.getElementById("pencet").innerHTML = "gas";
+        document.getElementById("cepat").innerHTML = "Kecepatam : 20 km";
+        
+        function onderdilGas() {
+        document.getElementById("cepat").innerHTML = "Kecepatan : 80 km";
+        document.getElementById("cepat").style.backgroundColor = "pink";
+    }
+
+    //    onderdilGas();
+
+    // VARIABLE
+    nama = "mila" //bisa tapi salah
+    let nimi = "wowo" 
+    const numu = "jae"
+
+
+    </script>
+</body>
+</html>
